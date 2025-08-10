@@ -1,0 +1,488 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Definition of the design system. All colors, gradients, fonts, etc should be defined here. 
+All colors MUST be HSL.
+*/
+
+@layer base {
+  /* Define base theme variables - light mode by default */
+  :root {
+    /* Base colors */
+    --background: 0 0% 100%;
+    --foreground: 240 10% 8%;
+
+    /* Glass card colors */
+    --card: 0 0% 98%;
+    --card-foreground: 240 10% 8%;
+    --glass: 240 20% 20% / 0.05;
+    --glass-border: 240 20% 40% / 0.1;
+
+    /* Popover colors */
+    --popover: 0 0% 98%;
+    --popover-foreground: 240 10% 8%;
+
+    /* Primary pink theme - preserved as specified */
+    --primary: 338 80% 42%;
+    --primary-foreground: 240 7% 97%;
+    --primary-glow: 338 80% 60%;
+    --primary-soft: 338 40% 90%;
+
+    /* Secondary blue for toggles - preserved as specified */
+    --secondary: 217 91% 60%;
+    --secondary-foreground: 240 7% 97%;
+    --secondary-soft: 217 40% 90%;
+
+    /* Muted colors */
+    --muted: 240 5% 100%;
+    --muted-foreground: 240 4% 40%;
+
+    /* Accent colors */
+    --accent: 240 5% 90%;
+    --accent-foreground: 240 10% 8%;
+
+    /* Status colors - preserved as specified */
+    --success: 142 70% 45%;
+    --success-foreground: 240 7% 97%;
+    --warning: 38 100% 50%;
+    --warning-foreground: 240 10% 8%;
+    --destructive: 0 84% 60%;
+    --destructive-foreground: 240 7% 97%;
+
+    /* Border and input */
+    --border: 240 5% 85%;
+    --input: 240 5% 85%;
+    --ring: 338 80% 42%;
+
+    /* Priority colors - preserved as specified */
+    --priority-high: 0 84% 60%;
+    --priority-medium: 38 100% 50%;
+    --priority-low: 142 70% 45%;
+
+    /* Gradients - preserved as specified */
+    --gradient-primary: linear-gradient(135deg, hsl(338 80% 42%), hsl(338 80% 60%));
+    --gradient-secondary: linear-gradient(135deg, hsl(217 91% 60%), hsl(217 91% 70%));
+    --gradient-background: linear-gradient(135deg, #eeeeec, #d4d4c4);
+    --gradient-glass: linear-gradient(135deg, hsl(240 20% 20% / 0.05) 0%, hsl(240 20% 30% / 0.02) 100%);
+
+    /* Shadows and effects */
+    --shadow-glass: 0 8px 32px hsl(240 10% 0% / 0.1);
+    --shadow-glow: 0 0 40px hsl(338 80% 60% / 0.3);
+    --shadow-soft: 0 4px 20px hsl(240 10% 0% / 0.1);
+    
+    /* Animation timings */
+    --transition-smooth: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    --transition-bounce: all 0.5s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+
+    /* Unified spacing system */
+    --spacing-xs: 0.25rem;   /* 4px */
+    --spacing-sm: 0.5rem;    /* 8px */
+    --spacing-md: 1rem;      /* 16px */
+    --spacing-lg: 1.5rem;    /* 24px */
+    --spacing-xl: 2rem;      /* 32px */
+    --spacing-2xl: 3rem;     /* 48px */
+    --spacing-3xl: 4rem;     /* 64px */
+
+    /* Unified border radius system */
+    --radius-xs: 4px;
+    --radius-sm: 8px;
+    --radius-md: 12px;
+    --radius-lg: 16px;
+    --radius-xl: 25px;
+    --radius-2xl: 32px;
+    --radius-full: 9999px;
+
+    /* Typography scale */
+    --text-xs: 0.75rem;      /* 12px */
+    --text-sm: 0.875rem;     /* 14px */
+    --text-base: 1rem;       /* 16px */
+    --text-lg: 1.125rem;     /* 18px */
+    --text-xl: 1.25rem;      /* 20px */
+    --text-2xl: 1.5rem;      /* 24px */
+    --text-3xl: 1.875rem;    /* 30px */
+    --text-4xl: 2.25rem;     /* 36px */
+    --text-5xl: 3rem;        /* 48px */
+
+    /* Line heights */
+    --leading-tight: 1.25;
+    --leading-normal: 1.5;
+    --leading-relaxed: 1.75;
+
+    /* Font weights */
+    --font-light: 300;
+    --font-normal: 400;
+    --font-medium: 500;
+    --font-semibold: 600;
+    --font-bold: 700;
+
+    /* Z-index scale */
+    --z-dropdown: 1000;
+    --z-sticky: 1020;
+    --z-fixed: 1030;
+    --z-modal-backdrop: 1040;
+    --z-modal: 1050;
+    --z-popover: 1060;
+    --z-tooltip: 1070;
+
+    /* Touch targets */
+    --touch-target: 44px;    /* Minimum touch target size */
+
+    --radius: var(--radius-xl);
+
+    --sidebar-background: 0 0% 98%;
+    --sidebar-foreground: 240 5.3% 26.1%;
+    --sidebar-primary: 240 5.9% 10%;
+    --sidebar-primary-foreground: 0 0% 98%;
+    --sidebar-accent: 240 4.8% 95.9%;
+    --sidebar-accent-foreground: 240 5.9% 10%;
+    --sidebar-border: 220 13% 91%;
+    --sidebar-ring: 217.2 91.2% 59.8%;
+  }
+
+  .monday-group-card {
+    
+    border-radius: 12px 12px 0px 0px !important; 
+  }
+  .monday-group-header {
+    border-radius: 12px 12px 0px 0px;
+  }
+
+  /* Dark mode theme variables */
+  .dark {
+    /* Base colors */
+    --background: 240 10% 8%;
+    --foreground: 240 7% 97%;
+
+    /* Glass card colors */
+    --card: 240 10% 12%;
+    --card-foreground: 240 7% 97%;
+    --glass: 240 20% 20% / 0.1;
+    --glass-border: 240 20% 40% / 0.2;
+
+    /* Popover colors */
+    --popover: 240 10% 12%;
+    --popover-foreground: 240 7% 97%;
+
+    /* Primary pink theme - preserved as specified */
+    /* Already defined in :root */
+
+    /* Secondary blue for toggles - preserved as specified */
+    /* Already defined in :root */
+
+    /* Muted colors */
+    --muted: 240 10% 15%;
+    --muted-foreground: 240 5% 65%;
+
+    /* Accent colors */
+    --accent: 240 10% 15%;
+    --accent-foreground: 240 7% 97%;
+
+    /* Status colors - preserved as specified */
+    /* Already defined in :root */
+
+    /* Border and input */
+    --border: 240 10% 20%;
+    --input: 240 10% 20%;
+    /* Ring is preserved as specified */
+
+    /* Priority colors - preserved as specified */
+    /* Already defined in :root */
+
+    /* Gradients - preserving primary and secondary, updating others */
+    --gradient-background: linear-gradient(135deg, hsl(240 10% 6%) 0%, hsl(240 15% 10%) 50%, hsl(240 10% 8%) 100%);
+    --gradient-glass: linear-gradient(135deg, hsl(240 20% 20% / 0.1) 0%, hsl(240 20% 30% / 0.05) 100%);
+
+    /* Shadows and effects */
+    --shadow-glass: 0 8px 32px hsl(240 10% 0% / 0.3);
+    /* Shadow glow preserved as specified */
+    --shadow-soft: 0 4px 20px hsl(240 10% 0% / 0.2);
+    
+    --sidebar-background: 240 5.9% 10%;
+    --sidebar-foreground: 240 4.8% 95.9%;
+    --sidebar-primary: 224.3 76.3% 48%;
+    --sidebar-primary-foreground: 0 0% 100%;
+    --sidebar-accent: 240 3.7% 15.9%;
+    --sidebar-accent-foreground: 240 4.8% 95.9%;
+    --sidebar-border: 240 3.7% 15.9%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground;
+    background: var(--gradient-background);
+    min-height: 100vh;
+  }
+}
+
+@layer components {
+  /* Comprehensive Glassmorphism System */
+  .glass-card {
+    @apply rounded-xl border backdrop-blur-md transition-all duration-300;
+    background: var(--gradient-glass);
+    border-color: hsl(var(--glass-border));
+    box-shadow: var(--shadow-glass);
+  }
+
+  .glass-card-sm {
+    @apply rounded-lg border backdrop-blur-md transition-all duration-300;
+    background: var(--gradient-glass);
+    border-color: hsl(var(--glass-border));
+    box-shadow: var(--shadow-soft);
+  }
+
+  .glass-card-lg {
+    @apply rounded-2xl border backdrop-blur-lg transition-all duration-300;
+    background: var(--gradient-glass);
+    border-color: hsl(var(--glass-border));
+    box-shadow: var(--shadow-glass);
+  }
+
+  .glass-navbar {
+    @apply backdrop-blur-md border-b transition-all duration-300;
+    background: hsl(var(--background) / 0.8);
+    border-color: hsl(var(--glass-border));
+    box-shadow: var(--shadow-soft);
+  }
+
+  .glass-sidebar {
+    @apply backdrop-blur-lg border-r transition-all duration-300;
+    background: hsl(var(--background) / 0.9);
+    border-color: hsl(var(--glass-border));
+    box-shadow: var(--shadow-glass);
+  }
+
+  .glass-modal {
+    @apply backdrop-blur-xl rounded-2xl border transition-all duration-300;
+    background: hsl(var(--background) / 0.95);
+    border-color: hsl(var(--glass-border));
+    box-shadow: var(--shadow-glass);
+  }
+  
+  /* Mobile-Optimized Glass Buttons */
+  .btn-glass-primary {
+    @apply rounded-lg px-4 py-2 font-medium backdrop-blur-md transition-all duration-300 hover:scale-105 active:scale-95;
+    background: var(--gradient-primary);
+    box-shadow: var(--shadow-soft);
+    min-height: var(--touch-target);
+    min-width: var(--touch-target);
+  }
+  
+  .btn-glass-primary:hover {
+    transform: translateY(-1px) scale(1.05);
+    box-shadow: var(--shadow-glow);
+  }
+
+  .btn-glass-primary:active {
+    transform: translateY(0) scale(0.95);
+  }
+  
+  .btn-glass-secondary {
+    @apply rounded-lg px-4 py-2 font-medium backdrop-blur-md transition-all duration-300 hover:scale-105 active:scale-95;
+    background: var(--gradient-secondary);
+    box-shadow: var(--shadow-soft);
+    min-height: var(--touch-target);
+    min-width: var(--touch-target);
+  }
+  
+  .btn-glass-secondary:hover {
+    transform: translateY(-1px) scale(1.05);
+  }
+
+  .btn-glass-secondary:active {
+    transform: translateY(0) scale(0.95);
+  }
+  
+  /* Mobile-Optimized Glass Input */
+  .input-glass {
+    @apply rounded-lg border px-3 py-2 backdrop-blur-md transition-all duration-300 focus:ring-2 focus:ring-primary/20;
+    background: hsl(var(--glass));
+    border-color: hsl(var(--glass-border));
+    min-height: var(--touch-target);
+  }
+  
+  .input-glass:focus {
+    @apply outline-none;
+    ring-color: hsl(var(--primary) / 0.2);
+    border-color: hsl(var(--primary));
+    box-shadow: 0 0 0 2px hsl(var(--primary) / 0.2);
+  }
+  
+  /* Progress bar */
+  .progress-bar {
+    @apply relative h-2 overflow-hidden rounded-full;
+    background: hsl(var(--muted));
+  }
+  
+  .progress-fill {
+    @apply h-full transition-all duration-500;
+    background: var(--gradient-primary);
+  }
+  
+  /* Status indicators */
+  .status-dot {
+    @apply h-3 w-3 rounded-full;
+  }
+  
+  .status-high { background: hsl(var(--priority-high)); }
+  .status-medium { background: hsl(var(--priority-medium)); }
+  .status-low { background: hsl(var(--priority-low)); }
+  
+  /* Smooth transitions */
+  .transition-smooth {
+    transition: var(--transition-smooth);
+  }
+  
+  .transition-bounce {
+    transition: var(--transition-bounce);
+  }
+}
+
+@layer utilities {
+  .hover-shimmer {
+    @apply relative overflow-hidden transition-all duration-300;
+  }
+
+  .hover-shimmer::after {
+    content: '';
+    @apply absolute top-0 -left-full w-full h-full;
+    background: linear-gradient(90deg, transparent, hsl(var(--foreground) / 0.1), transparent);
+    transform: skewX(-25deg);
+    transition: transform 0.5s ease;
+  }
+
+  .hover-shimmer:hover {
+    @apply scale-105;
+  }
+
+  .hover-shimmer:hover::after {
+    transform: translateX(250%) skewX(-25deg);
+  }
+
+  .hover-shimmer.rounded-full::after {
+    border-radius: 9999px;
+  }
+
+  /* Mobile-First Responsive Utilities */
+  .mobile-nav {
+    @apply fixed bottom-0 left-0 right-0 bg-background/95 backdrop-blur-md border-t z-50 md:hidden;
+    box-shadow: var(--shadow-glass);
+  }
+
+  .mobile-menu-overlay {
+    @apply fixed inset-0 bg-black/20 backdrop-blur-sm;
+    z-index: var(--z-modal-backdrop);
+  }
+
+  .mobile-menu {
+    @apply fixed top-0 left-0 h-full w-full sm:w-80 bg-background/95 backdrop-blur-lg border-r shadow-2xl overflow-y-auto;
+    z-index: var(--z-modal);
+  }
+
+  .touch-target {
+    min-height: var(--touch-target);
+    min-width: var(--touch-target);
+  }
+
+  .mobile-card {
+    @apply p-4 rounded-lg;
+  }
+
+  .desktop-card {
+    @apply p-6 rounded-xl;
+  }
+
+  /* Responsive text sizes */
+  .text-responsive-xs { font-size: clamp(0.75rem, 2vw, 0.875rem); }
+  .text-responsive-sm { font-size: clamp(0.875rem, 2.5vw, 1rem); }
+  .text-responsive-base { font-size: clamp(1rem, 3vw, 1.125rem); }
+  .text-responsive-lg { font-size: clamp(1.125rem, 3.5vw, 1.25rem); }
+  .text-responsive-xl { font-size: clamp(1.25rem, 4vw, 1.5rem); }
+
+  /* Focus indicators for accessibility */
+  .focus-visible {
+    @apply outline-none ring-2 ring-primary/50 ring-offset-2;
+  }
+
+  /* High contrast mode support */
+  @media (prefers-contrast: high) {
+    .glass-card,
+    .glass-card-sm,
+    .glass-card-lg,
+    .glass-modal {
+      border-width: 2px;
+      background: hsl(var(--background));
+    }
+  }
+
+  /* Reduced motion support */
+  @media (prefers-reduced-motion: reduce) {
+    .transition-smooth,
+    .transition-bounce,
+    .hover-shimmer {
+      transition: none;
+    }
+    
+    .hover-shimmer:hover {
+      transform: none;
+    }
+  }
+}
+
+/* Custom CSS classes for Cyrus to modify */
+.cyrus-image-slider {
+  /* Custom styles for the image slider container */
+}
+
+.cyrus-image-container {
+  /* Custom styles for the image container */
+}
+
+.cyrus-deadline {
+  /* Custom styles for the deadline display */
+}
+
+.cyrus-ui {
+  @apply rounded-[25px] ;
+}
+
+/* Override Tailwind's bg-primary class */
+.bg-primary {
+  background-color: transparent !important;
+}
+
+/* Class for UI indicators that should keep their background */
+.bg-indicator {
+  background-color: hsl(338 80% 50%) !important;
+}
+
+/* Class for buttons that need a solid background */
+.btn-solid-primary {
+  background-color: hsl(338 80% 50%) !important;
+  color: white;
+}
+
+.btn-solid-primary:hover {
+  background-color: hsl(338 80% 60%) !important;
+}
+
+/* Enhanced primary button styling */
+.button-primary-enhanced {
+  border: 1px solid hsl(338 80% 50%);
+  background: transparent !important; /* Override Tailwind's bg-primary */
+  color: white;
+  transition: all 0.3s ease;
+}
+
+.button-primary-enhanced:hover {
+  border-color: hsl(338 80% 60%);
+  background: hsl(338 80% 50%) !important; /* Override Tailwind's bg-primary */
+  color: white;
+  transform: scale(1.05);
+  box-shadow: 0 4px 15px hsl(338 80% 50% / 0.3);
+}

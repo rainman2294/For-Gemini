@@ -1,0 +1,383 @@
+/* Global Styles */
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, sans-serif;
+    font-size: 14px; /* Reduced from default */
+    line-height: 1.5;
+}
+
+/* App Container */
+#app {
+    font-size: 14px; /* Ensure app uses smaller text */
+    line-height: 1.4;
+}
+
+/* Headings - Make them smaller */
+#app h1 {
+    font-size: 1.75rem !important; /* Reduced from 3xl */
+    font-weight: 700;
+}
+
+#app h2 {
+    font-size: 1.5rem !important; /* Reduced from 2xl */
+    font-weight: 700;
+}
+
+#app h3 {
+    font-size: 1.25rem !important; /* Reduced from xl */
+    font-weight: 600;
+}
+
+/* Reports section - smaller text */
+#app .text-3xl {
+    font-size: 1.5rem !important; /* Much smaller than 3xl - As requested */
+}
+
+#app .text-2xl {
+    font-size: 1.4rem !important; /* Smaller than 2xl */
+}
+
+#app .text-xl {
+    font-size: 1.15rem !important; /* Smaller than xl */
+}
+
+/* General text sizes */
+#app p, #app span, #app div {
+    font-size: 14px;
+}
+
+#app .text-sm {
+    font-size: 12px !important;
+}
+
+#app .text-xs {
+    font-size: 11px !important;
+}
+
+/* Editor grid disabled state */
+.disabled-grid {
+    pointer-events: none;
+    opacity: 0.6;
+}
+
+/* --- NEW REPORT TOGGLE STYLES --- */
+.report-toggle {
+    display: inline-flex;
+    background-color: #e5e7eb;
+    border-radius: 9999px;
+    padding: 2px;
+}
+.report-toggle button {
+    padding: 4px 12px;
+    font-size: 12px;
+    font-weight: 500;
+    border-radius: 9999px;
+    border: none;
+    background-color: transparent;
+    color: #4b5563;
+    transition: all 0.2s ease-in-out;
+}
+.report-toggle button.active {
+    background-color: white;
+    color: #1f2937;
+    box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.06);
+}
+
+/* Export scope toggle - same styling as report toggle */
+.export-scope-toggle {
+    display: inline-flex;
+    background-color: #e5e7eb;
+    border-radius: 9999px;
+    padding: 2px;
+}
+.export-scope-toggle button {
+    padding: 4px 12px;
+    font-size: 12px;
+    font-weight: 500;
+    border-radius: 9999px;
+    border: none;
+    background-color: transparent;
+    color: #4b5563;
+    transition: all 0.2s ease-in-out;
+}
+.export-scope-toggle button.active {
+    background-color: white;
+    color: #1f2937;
+    box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.06);
+}
+/* --- END NEW STYLES --- */
+
+
+/* Professional Hover Effects */
+button {
+    transition: all 0.2s ease-in-out;
+}
+
+button:hover:not(:disabled) {
+    transform: translateY(-1px);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+button:active:not(:disabled) {
+    transform: translateY(0);
+}
+
+.tab {
+    transition: all 0.2s ease-in-out;
+    border-radius: 8px;
+}
+
+.tab:hover:not(.tab-active):not(.event-tab-active) {
+    background-color: #f3f4f6;
+    transform: translateY(-1px);
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Card hover effects */
+.timeline-grid:hover {
+    background-color: #fafafa;
+    transition: background-color 0.2s ease-in-out;
+}
+
+/* Interactive elements */
+.bg-white {
+    transition: box-shadow 0.2s ease-in-out;
+}
+
+.bg-white:hover {
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
+}
+
+/* Input hover effects */
+input:hover {
+    border-color: #d1d5db;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+    transition: all 0.2s ease-in-out;
+}
+
+input:focus {
+    border-color: #eb1a6d;
+    box-shadow: 0 0 0 3px rgba(235, 26, 109, 0.1);
+    outline: none;
+}
+
+/* Day tabs hover */
+#day-tabs button:hover:not(.tab-active) {
+    color: #eb1a6d;
+    border-color: #e5e7eb;
+}
+
+/* Custom Button Styles */
+.custom-button-bg {
+    background-color: #eb1a6d !important;
+}
+.custom-button-bg:hover {
+    background-color: #c8165b !important;
+}
+.custom-button-bg-disabled {
+    background-color: #f58cac !important; /* Lighter shade for disabled */
+}
+
+/* Timeline bars hover */
+.timeline-bar:hover {
+    filter: brightness(1.1);
+    transform: scale(1.02);
+    z-index: 20;
+    transition: all 0.2s ease-in-out;
+}
+
+/* Time slot hover */
+.time-slot:hover {
+    background-color: #f3f4f6 !important;
+    border-color: #d1d5db;
+    transform: scale(1.02);
+    z-index: 5;
+    position: relative;
+}
+
+.time-slot[data-selected="true"]:hover {
+    filter: brightness(1.1);
+}
+
+/* Modal backdrop */
+#logout-modal {
+    backdrop-filter: blur(4px);
+}
+
+/* Toast animation */
+#toast-notification.show {
+    animation: slideInFromRight 0.3s ease-out;
+}
+
+@keyframes slideInFromRight {
+    from {
+        transform: translateX(100%);
+        opacity: 0;
+    }
+    to {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+/* Main App Container */
+#app {
+    padding: 2rem;
+    font-family: 'Inter', sans-serif;
+    background-color: #f3f4f6;
+}
+
+/* Login Form */
+#loginView {
+    max-width: 400px;
+    margin: 2rem auto;
+    padding: 2rem;
+    background: white;
+    border-radius: 12px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+}
+
+#login-form div {
+    margin-bottom: 1rem;
+}
+
+#login-form input {
+    width: 100%;
+    padding: 0.75rem;
+    border: 1px solid #d1d5db;
+    border-radius: 8px;
+    font-size: 14px;
+    margin-top: 0.25rem;
+}
+
+#login-form button {
+    width: 100%;
+    padding: 0.75rem;
+    background-color: #eb1a6d;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-weight: 600;
+    cursor: pointer;
+    margin-top: 1rem;
+}
+
+#login-form button:hover {
+    background-color: #c8165b;
+}
+
+#login-error {
+    color: #dc2626;
+    font-size: 14px;
+    margin-top: 1rem;
+    text-align: center;
+}
+
+/* Grid Layout for Timeline */
+.timeline-grid {
+    display: grid;
+    grid-template-columns: 220px 1fr;
+    align-items: center;
+}
+
+/* Timeline Bars */
+.timeline-bar {
+    position: absolute;
+    height: 20px;
+    color: white;
+    font-size: 11px;
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+    padding: 0 8px;
+    border-radius: 4px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.3);
+    overflow: hidden;
+    white-space: nowrap;
+    z-index: 10;
+    min-width: 60px; /* Ensure minimum width for readability */
+    box-sizing: border-box;
+}
+
+/* Timeline bars responsive text */
+@media (max-width: 1024px) {
+    .timeline-bar {
+        font-size: 10px;
+        padding: 0 6px;
+        min-width: 50px;
+    }
+    
+    .timeline-bar span {
+        display: none; /* Hide text labels on smaller screens, keep only icons */
+    }
+}
+
+@media (max-width: 768px) {
+    .timeline-bar {
+        font-size: 12px;
+        padding: 0 4px;
+        min-width: 30px;
+        height: 18px;
+    }
+}
+
+/* Avatar Dots */
+.avatar-dot {
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    font-size: 12px;
+    color: white;
+    flex-shrink: 0;
+}
+
+/* Tabs */
+.tab-active {
+    border-color: #eb1a6d !important;
+    color: #eb1a6d !important;
+}
+
+.event-tab-active {
+    background-color: #eb1a6d !important;
+    color: white !important;
+}
+
+/* Time Slots (Editor) */
+.time-slot {
+    cursor: pointer;
+    transition: background-color 0.1s ease;
+    height: 40px;
+    user-select: none;
+}
+
+.selected-slot {
+    background-color: #ef4444 !important;
+}
+
+/* Toast Notification */
+#toast-notification.show {
+    opacity: 1;
+    visibility: visible;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    #app {
+        padding: 1rem;
+    }
+    
+    .timeline-grid {
+        grid-template-columns: 120px 1fr;
+    }
+    
+    .timeline-bar {
+        font-size: 10px;
+    }
+}

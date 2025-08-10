@@ -1,0 +1,51 @@
+Of course! I'm glad I could help. It's a great question. The process of getting your React app changes into your WordPress plugin involves a few steps, which I'll outline for you.
+Every time you make changes to the React application and want to see them in WordPress, you'll need to re-compile the app and update the files in your plugin.
+Because the build process generates unique filenames each time to prevent caching issues, you'll have to update the filenames in your PHP file as well.
+
+Here is the step-by-step process:
+Step 1: Build Your React App
+In your terminal, from the root directory of the project (glassy-project-pulse-main_ best Grok), run the build command:
+
+
+npm run build
+
+
+As you can see, the build process generates new files. Notice the outputted filenames:
+
+dist/assets/index-C5xSq3ZL.css
+dist/assets/index-DU8548TC.js
+
+These filenames have unique hashes (C5xSq3ZL and DU8548TC). These will change with each build.
+
+Step 2: Copy the New Files to Your Plugin
+Navigate to the wordpress/pulse2/build/assets/ directory. It's good practice to delete the old compiled files before adding the new ones.
+Copy the new .css and .js files from the dist/assets/ directory into the wordpress/pulse2/build/assets/ directory.
+Step 3: Update Your WordPress PHP File
+Finally, you need to tell your WordPress plugin about these new files.
+Open wordpress/pulse2/pulse2.php.
+Locate the pulse2_enqueue_assets function.
+Update the filenames in wp_enqueue_style and wp_enqueue_script to match the new files you just copied.
+Using the example from the build output above, you would change it to:
+
+
+function pulse2_enqueue_assets() {
+    if ( ! is_singular() ) return; // Or check for shortcode
+    $plugin_url = plugin_dir_url( __FILE__ );
+    wp_enqueue_style( 'pulse2-style', $plugin_url . 'build/assets/index-C5xSq3ZL.css' );
+    wp_enqueue_script( 'pulse2-script', $plugin_url . 'build/assets/index-DU8548TC.js', array(), null, true );
+    wp_localize_script( 'pulse2-script', 'pulse2', array(
+        'apiUrl' => rest_url( 'pulse2/v1/projects' ),
+        'mediaUrl' => rest_url( 'wp/v2/media' ),
+        'nonce' => wp_create_nonce( 'wp_rest' ),
+    ) );
+}
+
+
+Step 4: Using the Shortcode
+To display the Pulse 2 application on any WordPress page or post, use the shortcode:
+
+[pulse2]
+
+This process ensures that your WordPress plugin always loads the latest version of your React application.
+I know this is a bit of a manual process. If you're interested, I can help you automate these steps by modifying your build configuration.
+Let me know if you have any more questions

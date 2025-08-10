@@ -1,0 +1,84 @@
+
+
+Start Date: 2021-11-04 Project: Naga Client: Daan Project manager: Mohammad End Date: blank
+Start Date: 2022-05-01 Project: AB house Client: Daan Project manager: Mohammad End Date: blank
+Start Date: 2022-05-21 Project: Host Client: Daan Project manager: Mohammad End Date: blank
+Start Date: 2022-11-21 Project: Revision Client: Daan Project manager: Mohammad End Date: blank
+Start Date: 2023-08-19 Project: SPANISH Client: Daan Project manager: Mohammad End Date: blank
+Start Date: 2023-03-07 Project: Hudson Client: Daan Project manager: Mohammad End Date: blank
+Start Date: 2023-05-12 Project: Clayes Client: Daan Project manager: Mohammad End Date: blank
+Start Date: 2023-05-28 Project: True Star Client: Daan Project manager: Mohammad End Date: blank
+Start Date: 2023-09-12 Project: Uique Client: Daan Project manager: Mohammad End Date: blank
+Start Date: 2024-01-10 Project: Naga Tower Client: Daan Project manager: Mohammad End Date: blank
+Start Date: 2024-02-10 Project: Nieuw Trompenburg Client: Daan Project manager: Mohammad End Date: blank
+Start Date: 2024-03-28 Project: YARMOUK Client: Daan Project manager: Mohammad End Date: blank
+Start Date: 2024-08-20 Project: Merchant Client: Daan Project manager: Mohammad End Date: blank
+Start Date: 2024-09-17 Project: Langepad Zaandijk Client: Daan Project manager: Mohammad End Date: blank
+Start Date: 2024-10-04 Project: Broadgate Tower Client: Daan Project manager: Mohammad End Date: blank
+Start Date: 2024-10-15 Project: Nieuw Kralingen Client: Daan Project manager: Mohammad End Date: blank
+Start Date: 2024-10-22 Project: Brook St Client: Daan Project manager: Mohammad End Date: blank
+Start Date: 2024-10-23 Project: Bai Autodromo Client: Daan Project manager: Mohammad End Date: blank
+Start Date: 2024-12-17 Project: Eve Client: Daan Project manager: Mohammad End Date: blank
+Start Date: 2025-01-17 Project: Parkbuurt Client: Daan Project manager: Mohammad End Date: blank
+Start Date: 2025-01-16 Project: Bowlingsraat Client: Daan Project manager: Mohammad End Date: blank
+Start Date: 2025-01-20 Project: Lelystad De Spiegel Client: Daan Project manager: Mohammad End Date: blank
+Start Date: 2025-01-27 Project: Nieuw Kralingen Deel Client: Daan Project manager: Mohammad End Date: blank
+Start Date: 2025-01-30 Project: Schalkwijk Haarlem Client: Daan Project manager: Mohammad End Date: blank
+Start Date: 2025-04-08 Project: Dok 6 Client: Daan Project manager: Mohammad End Date: blank
+Start Date: 2025-04-08 Project: Ypsilon Park Client: Daan Project manager: Mohammad End Date: blank
+Start Date: 2025-04-15 Project: Blossem Edison Client: Daan Project manager: Mohammad End Date: blank
+Start Date: 2025-06-13 Project: Tevoort Bavel Client: Daan Project manager: Mohammad End Date: blank
+Start Date: 2025-06-25 Project: Nieuw Kralingen MOP Client: Daan Project manager: Mohammad End Date: blank
+Start Date: 2025-07-02 Project: Fonkel Client: Daan Project manager: Mohammad End Date: blank
+
+Start Date: 2021-09-30 Project: DREYFUS Client: Daan Project manager: Mohammad End Date: 2022-6-21
+Start Date: 2022-03-23 Project: Bechevelin Client: Daan Project manager: Mohammad End Date: 2022-9-9
+Start Date: 2022-04-13 Project: Tertres Client: Daan Project manager: Mohammad End Date: 2022-8-23
+Start Date: 2022-04-20 Project: Thiais Client: Daan Project manager: Mohammad End Date: 2022-11-29 
+Start Date: 2022-05-21 Project: Host Client: Daan Project manager: Mohammad End Date: 2022-8-12 
+Start Date: 2022-06-01 Project: PLARE Client: Elephant Skin Project manager: Mohammad End Date: 2022-8-18
+Start Date: 2022-06-08 Project: Choisy Client: Daan Project manager: Mohammad End Date: 2022-7-12 
+Start Date: 2022-06-21 Project: INVOT Client: Daan Project manager: Mohammad End Date: 2022-6-6
+Start Date: 2022-06-23 Project: INVOT Client: Daan Project manager: Mohammad End Date: blank
+Start Date: 2022-07-18 Project: Waterloo Client: Daan Project manager: Mohammad End Date: blank
+Start Date: 2022-07-27 Project: Hep Client: Daan Project manager: Mohammad End Date: blank
+Start Date: 2022-08-25 Project: BRON Client: Daan Project manager: Mohammad End Date: blank
+Start Date: 2022-09-05 Project: PLA84 Client: Daan Project manager: Mohammad End Date: blank
+Start Date: 2022-09-16 Project: MILE Client: Daan Project manager: Mohammad End Date: blank
+Start Date: 2022-10-07 Project: Daan project Client: Daan Project manager: Mohammad End Date: blank
+Start Date: 2022-10-13 Project: Bastide Client: Daan Project manager: Mohammad End Date: blank
+Start Date: 2022-10-15 Project: Kennedy reproduction Client: Daan Project manager: Mohammad End Date: blank
+Start Date: 2022-10-18 Project: Waldre Client: Daan Project manager: Mohammad End Date: blank
+Start Date: 2022-10-24 Project: Zicht Client: Daan Project manager: Mohammad End Date: blank
+Start Date: 2022-10-29 Project: Gruyter Client: Daan Project manager: Mohammad End Date: blank
+Start Date: 2022-12-01 Project: Triadome Client: Daan Project manager: Mohammad End Date: blank
+Start Date: 2022-12-20 Project: Keller Client: Daan Project manager: Mohammad End Date: blank
+Start Date: 2022-12-21 Project: Hanstholm Client: Daan Project manager: Mohammad End Date: blank
+Start Date: 2023-01-17 Project: EXALTO Client: Daan Project manager: Mohammad End Date: blank
+Start Date: 2023-01-23 Project: RETRO Client: Daan Project manager: Mohammad End Date: blank
+Start Date: 2023-01-26 Project: PAQUEBOT QUELLE Client: Daan Project manager: Mohammad End Date: blank
+Start Date: 2023-03-04 Project: Fietsznfabriek Client: Daan Project manager: Mohammad End Date: blank
+Start Date: 2023-04-15 Project: YUNAN Client: Daan Project manager: Mohammad End Date: blank
+Start Date: 2023-04-25 Project: C4 Client: Daan Project manager: Mohammad End Date: blank
+Start Date: 2023-04-26 Project: Neuilly 2 Client: Daan Project manager: Mohammad End Date: blank
+Start Date: 2023-04-28 Project: Village Olympique Client: Daan Project manager: Mohammad End. Date: blank
+Start Date: 2023-05-12 Project: Clayes Client: Daan Project manager: Mohammad End Date: blank
+Start Date: 2023-05-28 Project: True Star Client: Daan Project manager: Mohammad End Date: blank
+Start Date: 2023-07-13 Project: INGV Client: Daan Project manager: Mohammad End Date: blank
+Start Date: 2023-07-29 Project: BrickVisual Client: Daan Project manager: Mohammad End Date: blank
+
+Start Date: 2023-09-12 Project: Uique Client: Daan Project manager: Mohammad End Date: blank
+Start Date: 2024-01-10 Project: Naga Tower Client: Daan Project manager: Mohammad End Date: blank
+Start Date: 2024-02-13 Project: Glasfabriek Client: Daan Project manager: Mohammad End Date: blank
+Start Date: 2024-03-28 Project: YARMOUK Client: Daan Project manager: Mohammad End Date: blank
+Start Date: 2024-04-11 Project: Station M Client: Daan Project manager: Mohammad End Date: blank
+Start Date: 2024-06-07 Project: Virani_Burrard_Davie Client: Daan Project manager: Mohammad End Date: blank
+Start Date: 2024-07-08 Project: Alblasserdam Client: Daan Project manager: Mohammad End Date: blank
+Start Date: 2024-07-08 Project: Boca Raton Client: Daan Project manager: Mohammad End Date: blank
+Start Date: 2024-07-18 Project: Scheidingsstraat Eindhoven Client: Daan Project manager: Mohammad End Date: blank
+Start Date: 2024-08-12 Project: Gabriel Client: Daan Project manager: Mohammad End Date: blank
+Start Date: 2024-08-20 Project: Merchant Client: Daan Project manager: Mohammad End Date: blank
+Start Date: 2024-09-03 Project: Mein_Schiff Client: Daan Project manager: Mohammad End Date: blank
+Start Date: 2024-09-05 Project: Issy Baudin Client: Daan Project manager: Mohammad End Date: blank
+Start Date: 2024-12-17 Project: Parkbuurt Client: Daan Project manager: Mohammad End Date: blank
+Start Date: 2025-01-16 Project: Bowlingsraat Client: Daan Project manager: Mohammad End Date: blank
